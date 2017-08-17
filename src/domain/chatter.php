@@ -2,7 +2,7 @@
 
 namespace App\Domain;
 
-class ChatRoom {
+class Chatter {
     protected $members;
     protected $messages;
     protected $name;
@@ -23,18 +23,18 @@ class ChatRoom {
 
     public function SetTopic($topic) {
         $this->topic = $topic;
-        return $this;  // for fluent setters
+        return $this;
     }
 
     public function Join($mem) {
         $this->members[] = $mem;
-        return $this; // for fluent setters
+        return $this;
     }
 
-    public function Leave($mem) {
+    public function Exit($mem) {
         foreach ($this->members as $member) {
             if ($mem->GetEmail() === $member->GetEmail()) {
-                unset($member); // may not work in PHP 7.1, unit-test will tell us
+                unset($member);
                 return true;
             }
         }

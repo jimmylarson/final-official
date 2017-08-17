@@ -1,3 +1,2 @@
-#!/bin/sh
-
+#start as background
 docker-compose up -d

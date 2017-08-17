@@ -1,7 +1,7 @@
 <?php
 $coverage = new SebastianBergmann\CodeCoverage\CodeCoverage;
 $coverage->setData(array (
-  '/app/Domain/Message.php' => 
+  '/app/domain/message.php' =>
   array (
     9 => 
     array (
@@ -16,7 +16,7 @@ $coverage->setData(array (
       0 => 'MessageTest::testSetBody',
     ),
   ),
-  '/app/Domain/ChatRoom.php' => 
+  '/app/domain/chatter.php' =>
   array (
     11 => 
     array (
@@ -78,7 +78,7 @@ $coverage->setData(array (
       0 => 'ChatRoomTest::testChatRoomListMembers',
     ),
   ),
-  '/app/Domain/User.php' => 
+  '/app/domain/user.php' =>
   array (
     10 => 
     array (
@@ -181,9 +181,9 @@ $coverage->setTests(array (
 
 $filter = $coverage->filter();
 $filter->setWhitelistedFiles(array (
-  '/app/Domain/ChatRoom.php' => true,
-  '/app/Domain/Message.php' => true,
-  '/app/Domain/User.php' => true,
+  '/app/domain/chatter.php' => true,
+  '/app/domain/message.php' => true,
+  '/app/domain/user.php' => true,
 ));
 
 return $coverage;

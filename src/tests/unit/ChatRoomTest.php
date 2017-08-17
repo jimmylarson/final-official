@@ -1,6 +1,6 @@
 <?php
 
-require __DIR__.'/../../Domain/ChatRoom.php';
+require __DIR__ . '/../../Domain/chatter.php';
 
 class ChatRoomTest extends \Codeception\Test\Unit
 {

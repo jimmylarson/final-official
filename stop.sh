@@ -1,3 +1,2 @@
-#!/bin/sh
-
+#stop docker
 docker-compose down

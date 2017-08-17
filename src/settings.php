@@ -1,7 +1,7 @@
 <?php
 
-// Settings
 class Settings {
+
     protected $conf;
 
     public function __construct() {
@@ -16,9 +16,9 @@ class Settings {
         $this->conf = [
             "db" => [
                  "host" => "mysql",
-                 "dbname" => "test",
-                 "user" => "foo",
-                 "pass" => "bar"
+                 "dbname" => "CS3620",
+                 "user" => "marco",
+                 "pass" => "polo"
             ]
         ];
     }
