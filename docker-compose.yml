@@ -1,5 +1,6 @@
 version: "2"
 
+
 services:
     app-server:
         image: wsucs3620/alpine-nginx-php7:latest
